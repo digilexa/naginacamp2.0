@@ -9,10 +9,22 @@ body {
 	background-color: #fcfcfc;
 }
 
+.contact-and-email{
+	background-color: #c9a633;
+}
+.contact-and-email i{
+	font-size: 13px;
+}
+.contact-and-email a{
+	text-decoration: none;
+	color: white;
+	font-size: 13px;
+	}
+
 .header-container {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 10px;
+	width: 100%;
+	/* margin: 0 auto; */
+	/* padding: 10px; */
 	font-size: 16px;
 }
 
@@ -21,7 +33,6 @@ body {
 }
 
 .header-nav-list {
-	padding: 0 24px;
 	list-style-type: none;
 }
 
@@ -29,7 +40,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 10vh;
+	
 }
 
 .header-nav-link {
@@ -120,22 +131,63 @@ header ul.show li {
 	border-radius: 4px;
 	background-color: #d4af37;
 	color: #fff;
-
+	border: 1px solid #d4af37;
 }
 
 .header-btn-custom:hover, 
 .header-btn-custom:active {
+	color: #0d6efd;
 	background-color: #c9a633;
+	border: 1px solid #0d6efd;
+}
+
+.dropdown-toggle{
+	margin-bottom: 1px;
+}
+
+.dropdown-toggle:hover{
+	color: #0d6efd !important;
+}
+
+.dropdown-menu.show{
+	padding: 0px;
+	height: auto;
+	width: auto;
+	border-radius: 0px;
 	border: 1px solid #c9a633;
+}
+
+header li ul.show li{
+	margin: 0px;
+	border-bottom: 1px solid #c9a633;
+}
+header li ul.show li:last-child{
+	border: none;
+}
+
+header ul.show li a:hover{
+color: #0d6efd;
+}
+
+.dropdown-toggle:focus{
+	box-shadow: none !important;
 }
 
 @media (min-width: 850px) {
 	.header-nav-lists {
 		display: flex;
+		align-items: center;
+		gap: 25px;
 	}
 
 	.header-hamburger-icon {
 		display: none;
+	}
+}
+
+@media(max-width:600px){
+	.dropdown-toggle{
+		font-size: 20px !important;
 	}
 }
 
