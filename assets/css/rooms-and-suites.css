@@ -18,18 +18,18 @@ main {
 /* ----------------------------------------------- */
 /* -------------------- LAYOUT ------------------- */
 /* ----------------------------------------------- */
-.container {
+.container1 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1.5rem;
 }
 
-.row {
+.row1 {
     display: flex;
     flex-wrap: wrap;
 }
 
-.col {
+.col1 {
     padding: 5px;
     flex-wrap: nowrap;
 }
@@ -64,12 +64,12 @@ main {
     margin-top: 1px;
 }
 
-.col-3 {
+.col-3-1 {
     width: 33%;
     text-align: center;
 }
 
-.col-2 {
+.col-2-1 {
     margin: 0 20px 40px 0;
 }
 

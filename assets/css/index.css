@@ -86,9 +86,6 @@ h2 {
 	margin-top: 1px;
 }
 /* Header section--------------------- */
-
-
-
 .page-header-container {
 	margin-bottom: 70px;
 }
@@ -313,9 +310,9 @@ h2 {
 	margin-right: 10px;
 }
 
-.btn-fill {
-	background-color: #d4af37;
-	color: #fff;
+.btn-fill,.book-btn {
+	background-color: #d4af37 !important;
+	color: #fff !important;
 }
 .rates {
 	border-radius: 5px;
@@ -330,13 +327,13 @@ h2 {
 .btn-fill:hover,
 .btn-fill:active {
 	background-color: #c9a633;
-	transform: translateY(-3px);
+	transform: scale(1.05);
 	border: 1px solid #c9a633;
 }
 
 .btn-ghost {
-	color: #d4af37;
-	background-color: #fff;
+	color: #d4af37 !important;
+	background-color: #fff !important;
 }
 
 .btn-ghost:hover,

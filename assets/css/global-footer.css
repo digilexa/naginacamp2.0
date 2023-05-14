@@ -46,18 +46,45 @@
 	display: flex;
 	text-decoration: none;
    list-style-type: none;
+
 }
 
 .follow-us-list {
+	margin: 0 10px ;
    justify-self: start;
-	padding-right: 10px;
+	width: 35px;
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 5px;
+}
+
+.follow-us-list a,
+.service-list a,
+.Ql-list a{
+	text-decoration: none;
+	color: white;
+}
+
+.follow-us-list a:hover,
+.service-list a:hover,
+.Ql-list a:hover{
+	color: #c9a633;
+}
+
+
+
+.copyright{
+	background-color: #c9a633;
+	color: white;
+}
+
+.copyright i{
+	font-size: 10px;
 }
 
 
 
 @media (min-width: 768px) {
-
-
    .footer-nav {
       justify-items: start;
    }
