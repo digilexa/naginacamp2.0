@@ -13,7 +13,6 @@
 	<link rel="stylesheet" href="./assets/css/accesibility.css">
 	<link rel="stylesheet" href="./assets/css/index.css">
 	<link rel="shortcut icon" href="./assets/img/favicon.webp" type="image/x-icon">
-	<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 
 	<!-- Font awesome cdn -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -40,8 +39,8 @@
    <header class="sticky-top bg-white">
 	<div class="top-head">
 		<div class="contact-and-email d-flex align-items-center justify-content-end gap-3 pe-4 py-1">
-			<a href=""><i class="fa-sharp fa-solid fa-phone text-white"></i>&nbsp;+91XXXXXXXXXX</a>
-			<a href=""><i class="fa-sharp fa-solid fa-envelope text-white"></i> &nbsp;info@wwebsite.com</a>
+			<a href=""><i class="fa-sharp fa-solid fa-phone"></i>&nbsp;+91XXXXXXXXXX</a>
+			<a href=""><i class="fa-sharp fa-solid fa-envelope"></i> &nbsp;info@wwebsite.com</a>
 		</div>
 	</div>
 	
@@ -81,11 +80,11 @@
 			<h2 class="jumbotron-header">Discover the perfect balance <br> of hospitality, luxury and <br>comfort.</h2>
 			<p>We are focused on providing clients with the highest level<br>
 					of comfort and excellent affordable rates</p>
-					<a href="https://timbu.com/search?query=hotel" class="btn btn-fill">Book Now</a>
+					<a href="https://timbu.com/search?query=hotel" class="btn btn-fill btn-large">Book Now</a>
 		</div>
-		<!-- <div class="jumbotron-right">
+		<div class="jumbotron-right">
 			<form action="" class="jumbotron-form">
-				
+				<!-- Put the form here -->
 					<h3>Scared you can't afford it?</h3><br>
 					<p>Don't worry, our hotel offers the best<br> affordable rates you can ever find.</p>
 					<label class="hide" for="arrival">arrival date</label>
@@ -98,55 +97,7 @@
 					<input type="text" id="children" name="children" placeholder="Children"><br>
 					<button type="button" class="rates">CHECK RATES</button>
 			</form>
-		</div> -->
-		<div class="trip-search-section shape-search-section">
-            <div class="slider-shape"></div>
-            <div class="container">
-               <div class="trip-search-inner white-bg d-flex">
-                  <div class="input-group">
-                     <i class="fa-solid fa-user"></i>
-                     <input type="text" name="s" placeholder="Name">
-                  </div>
-                  <div class="input-group">
-                     <i class="fa-solid fa-envelope"></i>
-                     <input type="email" name="s" placeholder="Email">
-                  </div>
-                  <div class="input-group">
-                     <i class="fa-solid fa-mobile"></i>
-                     <input type="text" name="s" placeholder="Mobile / Whatsapp no.">
-                  </div>
-                  <div class="input-group">
-                     <i class="fa-solid fa-people-group"></i>
-                     <input type="text" name="s" placeholder="No.of People">
-                  </div>
-                  <div class="input-group width-col-3">
-
-                     <i class="fa-solid fa-calendar-days"></i>
-                     <input class="input-date-picker hasDatepicker" type="text" name="s" placeholder="MM / DD / YY" autocomplete="off" readonly="readonly" id="dp1685175803661">
-                  </div>
-                  <div class="input-group width-col-3">
-
-
-
-
-                     <select name="cars" id="cars">
-                        <option value="volvo"> Select package</option>
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
-                     </select>
-                  </div>
-
-
-                  <div class="input-group width-col-3">
-                     <label class="screen-reader-text"> Search </label>
-                     <input type="submit" name="travel-search" value="INQUIRE NOW">
-                  </div>
-               </div>
-            </div>
-         </div>
-		 
+		</div>
 	</div>
 
 	<!-- Enjoy your stay in our hotel -->
@@ -429,23 +380,6 @@
 			<p class="m-0 py-1">Copyright <i class="fa-regular fa-copyright"></i> 2023</p>
 		</div>
 	</footer>
-
-	<!-- COOKIE CONSENT POPUP -->
-
-	<div class="wrapper">
-      <header>
-        <i class="bx bx-cookie"></i>
-        <h3>Cookies Consent</h3>
-      </header>
-      <div class="data">
-        <p>This website use cookies to help you have a superior and more relevant browsing experience on the website. <br> <a href="#"> Read more...</a></p>
-      </div>
-      <div class="buttons">
-        <button class="button" id="acceptBtn">Accept</button>
-        <button class="button" id="declineBtn">Decline</button>
-      </div>
-    </div>
-
 	<script defer async>
 		(() => {
 			const loader = document.getElementById('loader');
@@ -457,6 +391,5 @@
 		})();
 	</script>
 	<script  defer async src="assets/js/toggleHamburger.js"></script>
-	<script src="assets/js/app.js"></script>
 </body>
 </html>
