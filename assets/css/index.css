@@ -4,10 +4,150 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+/* BOOK NOW SECTION */
+.trip-search-section .trip-search-inner {
+	background: #d4af3794;
+	box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.08);
+	padding: 36px 40px 42px;
+	position: relative;
+	-webkit-align-items: flex-end;
+	-moz-align-items: flex-end;
+	-ms-align-items: flex-end;
+	-ms-flex-align: flex-end;
+	align-items: flex-end;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	margin: 20px 0;
+}
+
+.trip-search-section .input-group {
+	width: 16%;
+	padding: 8px;
+}
+
+.trip-search-section .input-group i {
+	position: absolute;
+	bottom: 25px;
+	right: 25px;
+}
+
+.trip-search-section .input-group.width-col-1 {
+	width: 100%;
+}
+
+.trip-search-section label {
+	display: inline-block;
+	margin-bottom: 10px;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+.trip-search-section label span {
+	margin-right: 8px;
+	font-size: 14px;
+}
+
+.trip-search-section input:focus {
+	outline: none;
+}
+
+.trip-search-section input::placeholder {
+	/* Firefox, Chrome, Opera */
+	color: white;
+}
+
+.trip-search-section input:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: white;
+}
+
+.trip-search-section input::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: white;
+}
+
+.trip-search-section select,
+.trip-search-section input {
+	background: transparent;
+	color: #383838;
+	border: none;
+	height: 50px;
+	padding: 0 15px;
+	width: 100%;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-ms-box-shadow: none;
+	-o-box-shadow: none;
+	box-shadow: none;
+	line-height: 1.6;
+	border-bottom: 2px solid white;
+	font-size: 15px;
+}
+
+.trip-search-section input[type=submit] {
+	background-color: white;
+	color: #d4af37;
+	line-height: 1.3;
+	font-weight: 600;
+	margin-bottom: auto;
+	border: none;
+	border-radius: 10px;
+}
+
+.trip-search-section input[type=submit]:hover,
+.trip-search-section input[type=submit]:focus {
+	background-color: black;
+	color: #ffffff;
+}
+
+@media screen and (min-width: 576px) {
+	.trip-search-section .input-group {
+		width: 50%;
+	}
+
+	.trip-search-section .width-col-3 {
+		width: 33.33%;
+	}
+}
+
+@media only screen and (min-width: 915px) {
+	.trip-search-section .input-group {
+		width: 16%;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.trip-search-section .input-group {
+		width: 100%;
+	}
+
+	.trip-search-section .trip-search-inner {
+		position: initial;
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+}
+
+.home-banner-section .trip-search-section .trip-search-inner {
+	color: #ffffff;
+	padding: 30px;
+}
+
+.home-banner-section .trip-search-section .trip-search-inner input[type=submit] {
+	margin-top: 10px;
+}
+
 
 /* COOKIE CONSENT POPUP START*/
 .wrapper {
 	position: fixed;
+	z-index: 99;
 	bottom: 50px;
 	right: -370px;
 	max-width: 345px;
@@ -17,47 +157,55 @@
 	padding: 15px 25px 22px;
 	transition: right 0.3s ease;
 	box-shadow: 0 0 10px gray;
-	z-index: 99;
 }
 
-  .wrapper.show {
+.wrapper.show {
 	right: 20px;
-  }
-  .wrapper header {
+}
+
+.wrapper header {
 	display: flex;
 	align-items: center;
 	column-gap: 15px;
-  }
-  header i {
+}
+
+header i {
 	color: #d4af37;
 	font-size: 32px;
-  }
-  header h3 {
+}
+
+header h3 {
 	color: #d4af37;
 	font-weight: 500;
-  }
-  .wrapper .data {
+}
+
+.wrapper .data {
 	margin-top: 16px;
-  }
-  .wrapper .data p {
+}
+
+.wrapper .data p {
 	color: #333;
 	font-size: 16px;
-  }
-  .data p a {
+}
+
+.data p a {
 	color: #d8b74b;
 	text-decoration: none;
-  }
-  .data p a:hover {
+}
+
+.data p a:hover {
 	text-decoration: underline;
-  }
-  .wrapper .buttons {
+}
+
+.wrapper .buttons {
 	margin-top: 16px;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-  }
-  .buttons .button {
+}
+
+.buttons .button {
 	border: none;
 	color: #fff;
 	padding: 8px 0;
@@ -66,19 +214,23 @@
 	cursor: pointer;
 	width: calc(100% / 2 - 10px);
 	transition: all 0.2s ease;
-  }
-  .buttons #acceptBtn:hover {
+}
+
+.buttons #acceptBtn:hover {
 	background-color: #d8b74b;
-  }
-  #declineBtn {
+}
+
+#declineBtn {
 	border: 2px solid #d8b74b;
 	background-color: #fff;
 	color: #d8b74b;
-  }
-  #declineBtn:hover {
+}
+
+#declineBtn:hover {
 	background-color: #d8b74b;
 	color: #fff;
-  }
+}
+
 /* COOKIE CONSENT POPUP END*/
 
 
@@ -122,14 +274,17 @@
 p {
 	font-size: 18px;
 }
+
 h2 {
 	font-size: 40px;
 }
+
 .row {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
 .col {
 	padding: 5px;
 	flex-wrap: nowrap;
@@ -164,6 +319,7 @@ h2 {
 	flex-direction: column;
 	margin-top: 1px;
 }
+
 /* Header section--------------------- */
 .page-header-container {
 	margin-bottom: 70px;
@@ -174,6 +330,7 @@ h2 {
 	justify-content: flex-end;
 	padding-right: 100px;
 }
+
 .page-header {
 	/* font-weight: 500; */
 	text-align: center;
@@ -223,7 +380,7 @@ h2 {
 	/* border: 1px solid white; */
 }
 
-.jumbotron-left > * {
+.jumbotron-left>* {
 	margin: 0.5rem;
 }
 
@@ -250,11 +407,13 @@ h2 {
 	min-height: 60%;
 	border-radius: 5px;
 }
+
 .jumbotron-form p {
 	margin-bottom: 1em;
 	text-align: center;
 	font-size: 18px;
 }
+
 .jumbotron-form input {
 	outline: none;
 	width: 80%;
@@ -279,16 +438,20 @@ h2 {
 	display: flex;
 	flex-direction: column;
 }
+
 .enjoy-header {
 	width: 80%;
 	margin: 1em auto;
 }
+
 .enjoy-header h1 {
 	padding-top: 2em;
 }
-.enjoy-header > p {
+
+.enjoy-header>p {
 	width: 40%;
 }
+
 .enjoy-services {
 	display: flex;
 	flex-direction: row;
@@ -297,19 +460,23 @@ h2 {
 	margin-bottom: 5em;
 	/* border: 1px solid black; */
 }
+
 .enjoy-services h2 {
 	margin-bottom: 1em;
 }
+
 .first-col {
 	/* border: 1px solid black; */
 	flex: 1;
 	margin-right: 2em;
 }
+
 .sec-col {
 	/* border: 1px solid black; */
 	flex: 1;
 	margin-right: 2em;
 }
+
 .third-col {
 	/* border: 1px solid black; */
 	flex: 2;
@@ -325,6 +492,7 @@ h2 {
 	margin-bottom: 2em;
 	position: relative;
 }
+
 .enjoy__clock-icon,
 .enjoy__fitness-icon,
 .enjoy__wifi-icon,
@@ -389,10 +557,12 @@ h2 {
 	margin-right: 10px;
 }
 
-.btn-fill,.book-btn {
+.btn-fill,
+.book-btn {
 	background-color: #d4af37 !important;
 	color: #fff !important;
 }
+
 .rates {
 	border-radius: 5px;
 }
@@ -438,20 +608,24 @@ h2 {
 	flex-direction: column;
 	justify-content: center;
 }
+
 .review-header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-.review-header > p {
+
+.review-header>p {
 	text-align: center;
 }
+
 .cards-container {
 	display: flex;
 	margin-top: 2em;
 	margin-bottom: 4em;
 }
+
 .card {
 	flex: 1;
 	border: 1px solid rgb(158, 158, 158);
@@ -464,16 +638,20 @@ h2 {
 	padding: 1em 1em 1em 1em;
 	line-height: 1.5em;
 }
+
 .card-title {
 	font-size: 25px;
 }
+
 .card-avi {
 	width: 30%;
 	margin: 2em 0;
 }
+
 .card-subtitle {
 	margin-bottom: 1em;
 }
+
 .card-desc {
 	font-size: 18px;
 	font-weight: 300;
@@ -487,6 +665,7 @@ h2 {
 	.image-col {
 		margin: auto;
 	}
+
 	.jumbotron-container {
 		width: 100%;
 		flex-direction: column;
@@ -510,14 +689,17 @@ h2 {
 	.enjoy-services {
 		flex-direction: column;
 	}
+
 	.enjoy-header,
 	.enjoy-container,
 	.enjoy-header h1 {
 		text-align: center;
 	}
-	.enjoy-header > p {
+
+	.enjoy-header>p {
 		width: 100%;
 	}
+
 	/* Enjoy section icons for mobile */
 	.enjoy__clock-icon,
 	.enjoy__fitness-icon,
@@ -526,17 +708,21 @@ h2 {
 		position: unset;
 		padding: 0.5rem;
 	}
+
 	.page-header {
 		text-align: center;
 		padding: 1rem;
 		font-size: 30px;
 	}
+
 	.cards-container {
 		flex-direction: column;
 	}
+
 	.card {
 		margin-bottom: 1em;
 	}
+
 	.page-header:after {
 		margin: 0.5em auto 0 auto;
 		height: 2px;
@@ -545,6 +731,7 @@ h2 {
 	.page-header-container {
 		margin-bottom: 10px;
 	}
+
 	.btn-large {
 		margin-bottom: 1em;
 		margin: auto;
@@ -556,6 +743,7 @@ h2 {
 	.horizontal {
 		margin: 1em auto 2em auto;
 	}
+
 	.jumbotron-form {
 		width: 90%;
 		margin: 1em auto;
@@ -566,6 +754,7 @@ h2 {
 		font-size: 20px;
 		text-align: center;
 	}
+
 	.jumbotron-form p {
 		font-size: 17px;
 	}
@@ -573,6 +762,7 @@ h2 {
 	.jumbotron-form p br {
 		display: none;
 	}
+
 	.jumbotron-left p {
 		font-size: 18px;
 		width: 100%;
@@ -584,6 +774,7 @@ h2 {
 	.jumbotron-right {
 		flex: 1;
 	}
+
 	.jumbotron-form button {
 		margin-bottom: 1em;
 	}
@@ -673,6 +864,7 @@ h2 {
 	.img-hide {
 		display: none;
 	}
+
 	.review-title {
 		text-align: center;
 		font-size: 30px;
@@ -717,22 +909,27 @@ h2 {
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.btn-large {
 		margin: 0.5em auto 1em 1em;
 	}
+
 	.jumbotron-form {
 		width: 100%;
 		margin: 1em auto;
 		padding: 1em 0.5em;
 	}
+
 	.enjoy-header,
 	.enjoy-container,
 	.enjoy-header h1 {
 		text-align: center;
 	}
-	.enjoy-header > p {
+
+	.enjoy-header>p {
 		width: 100%;
 	}
+
 	.enjoy-services {
 		flex-direction: column;
 	}
@@ -744,29 +941,36 @@ h2 {
 	.card {
 		margin-bottom: 1em;
 	}
+
 	.page-header:after {
 		margin: 0.5em auto 0 auto;
 	}
+
 	.btn-large {
 		margin-bottom: 1em;
 	}
+
 	.jumbotron-left h1 {
 		font-size: 50px;
 		margin-top: 1em;
 	}
+
 	.horizontal {
 		margin: 1em auto 2em auto;
 	}
 }
+
 @media only screen and (min-width: 700px) {
 	.jumbotron-form {
 		margin: 1em 0;
 	}
+
 	.jumbotron-form h3 {
 		padding-top: 1em;
 		font-size: 25px;
 		text-align: center;
 	}
+
 	.jumbotron-form p {
 		font-size: 18px;
 	}
@@ -775,12 +979,14 @@ h2 {
 		margin-bottom: 1em;
 	}
 }
+
 @media only screen and (min-width: 954px) {
 	.jumbotron-container {
 		width: 100%;
 		flex-direction: row;
 		align-items: center;
 	}
+
 	.enjoy-services {
 		flex-direction: row;
 	}
