@@ -17,6 +17,7 @@
 	padding: 15px 25px 22px;
 	transition: right 0.3s ease;
 	box-shadow: 0 0 10px gray;
+	z-index: 99;
 }
 
   .wrapper.show {
