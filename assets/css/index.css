@@ -991,3 +991,95 @@ h2 {
 		flex-direction: row;
 	}
 }
+
+
+/* OFFER POP UP */
+.offer-modal{
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.404);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	display: none;
+	
+}
+.offer-modal-content{
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.offer-modal-content-body{
+	width: 60%;
+	background: linear-gradient(#d4af37c0,rgba(255, 255, 255, 0.445)),url(/assets/img/desert_landscape_with_man_and_camel_desert_wallpaper.jpg);
+	background-position: left;
+	background-size: cover;
+	position: relative;
+}
+
+.offer-modal-content-body form input{
+	padding: 10px;
+	border: none;
+}
+
+.offer-modal-content-body form input:focus{
+	border: none;
+	outline: none;
+}
+
+.offer-modal-content-body form input::placeholder{
+	color: #bdb7b7;
+}
+
+.offer-modal-content-body form button{
+margin-top: 20px;
+background-color: #ebc032da;
+color: white;
+padding: 10px 20px;
+border: 1px solid white;
+font-weight: bold;
+}
+
+.offer-modal-content-body form button:hover{
+	background: rgba(0, 0, 0, 0.74);
+}
+
+
+.offer-value h1{
+	font-size: 50px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.offer-value h1 span{
+	color: #1f1e1e;
+	font-size: 50px;
+}
+
+.close-offer{
+	position: absolute;
+	top: 2px;
+	right: 5px;
+	color: rgba(0, 0, 0, 0.808);
+	cursor: pointer;
+}
+
+.close-offer i:hover{
+	color: white;
+}
+
+@media(max-width: 600px){
+	.offer-modal-content-body{
+		width: 80%;
+	}
+
+	.offer-value h1{
+		font-size: 30px;
+	}
+	.offer-value h1 span{
+		color: #1f1e1e;
+		font-size: 30px;
+	}
+}

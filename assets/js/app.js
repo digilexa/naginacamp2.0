@@ -17,3 +17,16 @@ const executeCodes = () => {
 };
 
 window.addEventListener("load", executeCodes);
+
+// OFFER POP UP
+
+const myTimeout = setTimeout(myGreeting, 5000);
+
+function myGreeting() {
+  document.querySelector(".offer-modal").style.display = "block";
+}
+
+document.querySelector(".close-offer").addEventListener('click',()=>{
+  document.querySelector(".offer-modal").style.display = "none";
+});
+
