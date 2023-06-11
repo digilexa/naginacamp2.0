@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="./assets/css/global-footer.css" />
 		<link rel="stylesheet" href="./assets/css/accesibility.css">
 		<link rel="stylesheet" href="./assets/css/contact-page.css" />
+		<link rel="stylesheet" href="/assets/css/index.css">
 		<link
 			rel="shortcut icon"
 			href="./assets/img/favicon.webp"
@@ -67,6 +68,55 @@
 		
 			  </div>
 			</header>
+			<div class="trip-search-section shape-search-section">
+
+				<div class="container">
+	
+					<div class="trip-booking white-bg d-flex">
+						<div class="slider-shape"><small>QUICK BOOKING</small></div>
+						<form action="" class="d-flex trip-search-inner">
+							<div class="input-group width-col-3">
+	
+								<i class="fa-solid fa-calendar-days"></i>
+								<input class="input-date-picker" type="text" name="s" placeholder="CHECK IN"
+									autocomplete="off" readonly="readonly" id="CHECK-IN">
+							</div>
+							<div class="input-group width-col-3">
+	
+								<i class="fa-solid fa-calendar-days"></i>
+								<input class="input-date-picker" type="text" name="s" placeholder="CHECK OUT"
+									autocomplete="off" readonly="readonly" id="CHECK-OUT">
+							</div>
+							<div class="input-group">
+								<i class="fa-solid fa-people-group"></i>
+								<input type="number" name="s" placeholder="GUESTS">
+							</div>
+							<div class="input-group">
+								<i class="fa-solid fa-envelope"></i>
+								<input type="email" name="s" placeholder="Email">
+							</div>
+							<div class="input-group">
+								<i class="fa-solid fa-mobile"></i>
+								<input type="number" name="s" placeholder="Mobile / Whatsapp no.">
+							</div>
+	
+	
+	
+	
+	
+							<div class="input-group width-col-3">
+								<input type="submit" name="travel-search" value="BOOK NOW">
+							</div>
+						</form>
+						<div class="close-slide">
+							
+							<small>CLOSE</small>
+							<i class="fa-solid fa-arrow-right-from-bracket"></i>
+						</div>
+	
+					</div>
+				</div>
+			</div>
 
 		<main>
 			<div class="container">
@@ -283,6 +333,13 @@
                 <p class="m-0 py-1">Copyright <i class="fa-regular fa-copyright"></i> 2023</p>
             </div>
         </footer>
-		<script src="assets/js/toggleHamburger.js"></script>
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="assets/js/switchRooms.js"></script>
+    <script src="assets/js/toggleHamburger.js"></script>
+    <script src="assets/js/app.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script>
+		flatpickr("#CHECK-IN , #CHECK-OUT", {});
+	</script>
 	</body>
 </html>

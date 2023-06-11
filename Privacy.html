@@ -19,45 +19,97 @@
 </head>
 <body>
     <header class="sticky-top bg-white">
-        <div class="top-head">
-            <div class="contact-and-email d-flex align-items-center justify-content-end gap-3 pe-4 py-1">
-                <a href=""><i class="fa-sharp fa-solid fa-phone"></i>&nbsp;+91XXXXXXXXXX</a>
-                <a href=""><i class="fa-sharp fa-solid fa-envelope"></i> &nbsp;info@wwebsite.com</a>
+		<div class="top-head">
+			<div class="contact-and-email d-flex align-items-center justify-content-end gap-3 pe-4 py-1">
+				<a href=""><i class="fa-sharp fa-solid fa-phone text-white"></i>&nbsp;+91XXXXXXXXXX</a>
+				<a href=""><i class="fa-sharp fa-solid fa-envelope text-white"></i> &nbsp;info@wwebsite.com</a>
+			</div>
+		</div>
+
+		<div class="header-container">
+
+			<nav class="header-nav-bar">
+				<div class="header-nav-logo">
+					<a href="index.html">
+						<img src="https://res.cloudinary.com/joshuafolorunsho/image/upload/v1591615159/star_hotels_logo.png"
+							alt="star hotels logo">
+					</a>
+				</div>
+				<ul class="header-nav-lists m-0">
+					<li class="header-nav-list">
+						<a class="header-nav-link header-active" href="index.html">Home</a>
+					</li>
+					<li class="header-nav-list">
+						<a class="header-nav-link " href="packages.html">Packages</a>
+					</li>
+					<li class="header-nav-list"><a class="header-nav-link" href="rooms-and-suites.html">Rooms and
+							Suites</a></li>
+					<li class="header-nav-list"><a class="header-nav-link" href="facilities.html">Facilities</a></li>
+					<li class="header-nav-list"><a class="header-nav-link" href="contact-page.html">Contact Us</a></li>
+					<li class="header-nav-list"><a class="header-btn header-btn-custom"
+							href="https://timbu.com/search?query=hotel">BOOK NOW</a></li>
+				</ul>
+
+				<div class="header-hamburger-icon">
+					<div class="header-hamburger-line-1"></div>
+					<div class="header-hamburger-line-2"></div>
+					<div class="header-hamburger-line-3"></div>
+				</div>
+			</nav>
+		</div>
+
+		</div>
+	</header>
+
+    <div class="trip-search-section shape-search-section">
+
+        <div class="container">
+
+            <div class="trip-booking white-bg d-flex">
+                <div class="slider-shape"><small>QUICK BOOKING</small></div>
+                <form action="" class="d-flex trip-search-inner">
+                    <div class="input-group width-col-3">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <input class="input-date-picker" type="text" name="s" placeholder="CHECK IN"
+                            autocomplete="off" readonly="readonly" id="CHECK-IN">
+                    </div>
+                    <div class="input-group width-col-3">
+
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <input class="input-date-picker" type="text" name="s" placeholder="CHECK OUT"
+                            autocomplete="off" readonly="readonly" id="CHECK-OUT">
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-people-group"></i>
+                        <input type="number" name="s" placeholder="GUESTS">
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" name="s" placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <i class="fa-solid fa-mobile"></i>
+                        <input type="number" name="s" placeholder="Mobile / Whatsapp no.">
+                    </div>
+
+
+
+
+
+                    <div class="input-group width-col-3">
+                        <input type="submit" name="travel-search" value="BOOK NOW">
+                    </div>
+                </form>
+                <div class="close-slide">
+                    
+                    <small>CLOSE</small>
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+
             </div>
         </div>
-        
-        <div class="header-container">
-            
-             <nav class="header-nav-bar">
-                    <div class="header-nav-logo">
-                        <a href="index.html">
-                            <img src="https://res.cloudinary.com/joshuafolorunsho/image/upload/v1591615159/star_hotels_logo.png"
-                                alt="star hotels logo">
-                        </a>
-                    </div>
-                    <ul class="header-nav-lists m-0">
-                            <li class="header-nav-list">
-                                <a class="header-nav-link " href="index.html">Home</a>
-                            </li>
-                            <li class="header-nav-list"><a class="header-nav-link "
-                                    href="rooms-and-suites.html">Rooms and Suites</a></li>
-                            <li class="header-nav-list"><a class="header-nav-link" href="facilities.html">Facilities</a></li>
-                            <li class="header-nav-list"><a class="header-nav-link" href="contact-page.html">Contact Us</a></li>
-                            <li class="header-nav-list"><a class="header-btn header-btn-custom" href="https://timbu.com/search?query=hotel">BOOK NOW</a></li>
-                        </ul>
-                
-                <div class="header-hamburger-icon">
-                   <div class="header-hamburger-line-1"></div>
-                   <div class="header-hamburger-line-2"></div>
-                   <div class="header-hamburger-line-3"></div>
-                </div>
-             </nav>
-          </div>
-    
-          </div>
-        </header>
-
-
+    </div>
 
         <footer class="footer">
             <div class="footer-container">
@@ -192,8 +244,14 @@
                 <p class="m-0 py-1">Copyright <i class="fa-regular fa-copyright"></i> 2023</p>
             </div>
         </footer>
-        <script src="assets/js/switchRooms.js"></script>
-        <script src="assets/js/toggleHamburger.js"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="assets/js/switchRooms.js"></script>
+    <script src="assets/js/toggleHamburger.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script>
+		flatpickr("#CHECK-IN , #CHECK-OUT", {});
+	</script>
     </body>
     
     </html> 

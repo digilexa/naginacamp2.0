@@ -1,23 +1,24 @@
+$(document).ready(function() {
+  const hamburger = $('.header-hamburger-icon');
+  const standardRoomSelector = $('#standard-room');
+  const executiveRoomSelector = $('#executive-room');
+  const kingRoomSelector = $('#king-room');
 
-const hamburger = document.querySelector('.header-hamburger-icon');
-const standardRoomSelector = document.querySelector('#standard-room')
-const executiveRoomSelector = document.querySelector('#executive-room')
-const kingRoomSelector = document.querySelector('#king-room')
+  standardRoomSelector.on('click', () => {
+    standardRoomSelector.addClass('active-header');
+    executiveRoomSelector.removeClass('active-header');
+    kingRoomSelector.removeClass('active-header');
+  });
 
-standardRoomSelector.addEventListener('click', () => {
-  standardRoomSelector.classList.add('active-header');
-  executiveRoomSelector.classList.remove('active-header');
-  kingRoomSelector.classList.remove('active-header');
-});
+  executiveRoomSelector.on('click', () => {
+    executiveRoomSelector.addClass('active-header');
+    standardRoomSelector.removeClass('active-header');
+    kingRoomSelector.removeClass('active-header');
+  });
 
-executiveRoomSelector.addEventListener('click', () => {
-  executiveRoomSelector.classList.add('active-header');
-  standardRoomSelector.classList.remove('active-header');
-  kingRoomSelector.classList.remove('active-header');
-});
-
-kingRoomSelector.addEventListener('click', () => {
-  kingRoomSelector.classList.add('active-header');
-  standardRoomSelector.classList.remove('active-header');
-  executiveRoomSelector.classList.remove('active-header');
+  kingRoomSelector.on('click', () => {
+    kingRoomSelector.addClass('active-header');
+    standardRoomSelector.removeClass('active-header');
+    executiveRoomSelector.removeClass('active-header');
+  });
 });
