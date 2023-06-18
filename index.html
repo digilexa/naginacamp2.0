@@ -59,6 +59,9 @@
 					<li class="header-nav-list">
 						<a class="header-nav-link header-active" href="index.html">Home</a>
 					</li>
+					<li class="header-nav-list">
+						<a class="header-nav-link " href="packages.html">Packages</a>
+					</li>
 					<li class="header-nav-list"><a class="header-nav-link" href="rooms-and-suites.html">Rooms and
 							Suites</a></li>
 					<li class="header-nav-list"><a class="header-nav-link" href="facilities.html">Facilities</a></li>
@@ -102,41 +105,51 @@
 			</form>
 		</div> -->
 		<div class="trip-search-section shape-search-section">
-			<div class="slider-shape"></div>
+
 			<div class="container">
-				<div class="trip-search-inner white-bg d-flex">
-					<div class="input-group width-col-3" >
 
-						<i class="fa-solid fa-calendar-days"></i>
-						<input class="input-date-picker" type="text" name="s" placeholder="CHECK IN" autocomplete="off"
-							readonly="readonly" id="CHECK-IN">
+				<div class="trip-booking white-bg d-flex">
+					<div class="slider-shape"><small>QUICK BOOKING</small></div>
+					<form action="" class="d-flex trip-search-inner">
+						<div class="input-group width-col-3">
+
+							<i class="fa-solid fa-calendar-days"></i>
+							<input class="input-date-picker" type="text" name="s" placeholder="CHECK IN"
+								autocomplete="off" readonly="readonly" id="CHECK-IN">
+						</div>
+						<div class="input-group width-col-3">
+
+							<i class="fa-solid fa-calendar-days"></i>
+							<input class="input-date-picker" type="text" name="s" placeholder="CHECK OUT"
+								autocomplete="off" readonly="readonly" id="CHECK-OUT">
+						</div>
+						<div class="input-group">
+							<i class="fa-solid fa-people-group"></i>
+							<input type="number" name="s" placeholder="GUESTS">
+						</div>
+						<div class="input-group">
+							<i class="fa-solid fa-envelope"></i>
+							<input type="email" name="s" placeholder="Email">
+						</div>
+						<div class="input-group">
+							<i class="fa-solid fa-mobile"></i>
+							<input type="number" name="s" placeholder="Mobile / Whatsapp no.">
+						</div>
+
+
+
+
+
+						<div class="input-group width-col-3">
+							<input type="submit" name="travel-search" value="BOOK NOW">
+						</div>
+					</form>
+					<div class="close-slide">
+						
+						<small>CLOSE</small>
+						<i class="fa-solid fa-arrow-right-from-bracket"></i>
 					</div>
-					<div class="input-group width-col-3">
 
-						<i class="fa-solid fa-calendar-days"></i>
-						<input class="input-date-picker" type="text" name="s" placeholder="CHECK OUT" autocomplete="off"
-							readonly="readonly" id="CHECK-OUT">
-					</div>
-					<div class="input-group">
-						<i class="fa-solid fa-people-group"></i>
-						<input type="number" name="s" placeholder="GUESTS">
-					</div>
-					<div class="input-group">
-						<i class="fa-solid fa-envelope"></i>
-						<input type="email" name="s" placeholder="Email">
-					</div>
-					<div class="input-group">
-						<i class="fa-solid fa-mobile"></i>
-						<input type="number" name="s" placeholder="Mobile / Whatsapp no.">
-					</div>
-
-
-
-
-
-					<div class="input-group width-col-3">
-						<input type="submit" name="travel-search" value="BOOK NOW">
-					</div>
 				</div>
 			</div>
 		</div>
@@ -297,18 +310,45 @@
 	</div>
 
 	<!-- 	VISITORS REVIEW -->
-	
+
 	<section>
 		<div class="review-header">
 			<h2 class="review-title">
 				Visitor's Reviews
 			</h2>
 			<hr class="horizontal">
-			<p class="">We are very proud of the services we offer to our customers.<br>Read every word from our happy customers.</p>
+			<p class="">We are very proud of the services we offer to our customers.<br>Read every word from our happy
+				customers.</p>
 		</div>
-	
-	<div class='sk-ww-google-reviews my-4' data-embed-id='149033'></div>
+
+		<div class='sk-ww-google-reviews my-4' data-embed-id='149033'></div>
 	</section>
+
+	<!-- 	VISITORS REVIEW -->
+
+	<!-- OFFER PAGE POP UP -->
+	<section>
+		<div class="offer-modal">
+			<div class="offer-modal-content">
+				<div class="offer-modal-content-body pb-5">
+					<div class="close-offer">
+						<i class="fa-solid fa-circle-xmark"></i>
+					</div>
+
+					<div class="offer-value">
+						<h1 class="px-5 pt-5 text-center h1 fw-bolder text-white">SAVE <span>30%</span> OFF ON YOUR NEXT
+							PURCHASE</h1>
+						<p class="text-center px-5 fw-bolder">Sign up to our newsletter and get your coupon code</p>
+						<form action="" class="d-flex flex-column justify-content-center align-items-center">
+							<input type="text" placeholder="Enter Your Email Id">
+							<button type="submit ">GET YOUR CODE</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- OFFER PAGE POP UP -->
 
 
 	<footer class="footer">
@@ -469,10 +509,12 @@
 		</div>
 	</div>
 
+
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
 		integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
 		crossorigin="anonymous" referrerpolicy="no-referrer">
-	</script>
+		</script>
 
 	<script defer async>
 		(() => {
@@ -489,7 +531,7 @@
 	<script>
 		flatpickr("#CHECK-IN , #CHECK-OUT", {});
 	</script>
-	
+
 	<script src="assets/js/app.js"></script>
 	<script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
 

@@ -4,9 +4,66 @@
 	font-family: 'Roboto', sans-serif;
 }
 
+
+hr {
+	width: 100%;
+}
+
 /* BOOK NOW SECTION */
+.trip-booking{
+	position: fixed;
+	bottom: -30px;
+	right: -100%;
+	width: 100%;
+	margin: 20px 0;
+	z-index: 999;
+	transition: 0.5s;
+}
+
+.slider-shape {
+	position: absolute;
+	transform: rotate(90deg);
+	top: 43px;
+	left: -78px;
+	font-size: 15px;
+	border: 2px solid white;
+	padding: 5px 10px;
+	border-radius: 0px 0px 20px 20px;
+	background-color: #d4af37;
+	cursor: pointer;
+}
+
+.slider-shape:hover {
+	background-color: white;
+	border-color: #d4af37;
+	color: #d4af37;
+}
+
+.close-slide i,
+.close-slide small{
+	font-size: 10px;
+}
+
+.close-slide{
+	position: absolute;
+    color: white;
+    right: 0;
+    top: 0;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    padding: 0 10px;
+	cursor: pointer;
+}
+
+.active-slider{
+	right: 0;
+	transition: 0.5s;
+}
+
+
+
 .trip-search-section .trip-search-inner {
-	background: #d4af3794;
+	background: #d4af37;
 	box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.08);
 	padding: 36px 40px 42px;
 	position: relative;
@@ -19,11 +76,7 @@
 	-moz-flex-wrap: wrap;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	margin: 20px 0;
+	
 }
 
 .trip-search-section .input-group {
@@ -483,7 +536,7 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: relative;
+	
 }
 
 .upper,
@@ -627,6 +680,7 @@ h2 {
 }
 
 .card {
+	position: initial !important;
 	flex: 1;
 	border: 1px solid rgb(158, 158, 158);
 	min-height: 40vh;
@@ -990,4 +1044,116 @@ h2 {
 	.enjoy-services {
 		flex-direction: row;
 	}
+}
+
+
+/* OFFER POP UP */
+.offer-modal {
+	height: 100vh;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.404);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	display: none;
+
+}
+
+.offer-modal-content {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.offer-modal-content-body {
+	width: 60%;
+	background: linear-gradient(#d4af37c0, rgba(255, 255, 255, 0.445)), url(/assets/img/desert_landscape_with_man_and_camel_desert_wallpaper.jpg);
+	background-position: left;
+	background-size: cover;
+	position: relative;
+}
+
+.offer-modal-content-body form input {
+	padding: 10px;
+	border: none;
+}
+
+.offer-modal-content-body form input:focus {
+	border: none;
+	outline: none;
+}
+
+.offer-modal-content-body form input::placeholder {
+	color: #bdb7b7;
+}
+
+.offer-modal-content-body form button {
+	margin-top: 20px;
+	background-color: #ebc032da;
+	color: white;
+	padding: 10px 20px;
+	border: 1px solid white;
+	font-weight: bold;
+}
+
+.offer-modal-content-body form button:hover {
+	background: rgba(0, 0, 0, 0.74);
+}
+
+
+.offer-value h1 {
+	font-size: 50px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.offer-value h1 span {
+	color: #1f1e1e;
+	font-size: 50px;
+}
+
+.close-offer {
+	position: absolute;
+	top: 2px;
+	right: 5px;
+	color: rgba(0, 0, 0, 0.808);
+	cursor: pointer;
+}
+
+.close-offer i:hover {
+	color: white;
+}
+
+@media(max-width: 600px) {
+	.offer-modal-content-body {
+		width: 80%;
+	}
+
+	.offer-value h1 {
+		font-size: 30px;
+	}
+
+	.offer-value h1 span {
+		color: #1f1e1e;
+		font-size: 30px;
+	}
+}
+
+/* package css */
+
+.package-img-box {
+	height: 400px;
+	overflow: hidden;
+}
+
+.package-img-box img {
+	object-position: center;
+	object-fit: cover;
+}
+
+.section-heading {}
+
+.bg-section {
+	background: linear-gradient(#d4af37d3, #3b331a5b), url(https://plus.unsplash.com/premium_photo-1661962542692-4fe7a4ad6b54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGNhbWVscyUyMGluJTIwZGVzZXJ0fGVufDB8fDB8fHww&w=1000&q=80) no-repeat center/cover;
 }
